@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17-Sep-2017, 17:34:25
+    Author     : BlackMageMario
+*/
+div
+{
+   padding-left: 5%;
+   padding-right: 5%;
+}
+h1, h2
+{
+   padding-left: 2%;
+   padding-right: 2%;
+}
+.spaceBR
+{
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 10px; /* change this to whatever height you want it */
+}
+.fieldSetAutoSize
+{
+    display: inline-block;
+}
+

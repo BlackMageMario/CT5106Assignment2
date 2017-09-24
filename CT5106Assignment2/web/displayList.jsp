@@ -10,22 +10,25 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assignmentCSS.css"/>
         <title>Distribution List</title>
     </head>
     <body>
         <h1>Distribution List</h1>
-        <% String message = (String)request.getAttribute("message");
-            if(message != null)
+        <div>
+            <% String message = (String)request.getAttribute("message");
+                if(message != null)
+                {%>
+                    <p><%=message%></p>
+                <%}
+            %>
+            <p>Distribution List</p>
+            <% ArrayList<String> list = (ArrayList<String>)session.getAttribute("emails");
+            for(String string : list)
             {%>
-                <p><%=message%></p>
-            <%}
-        %>
-        <p>Distribution List</p>
-        <% ArrayList<String> list = (ArrayList<String>)session.getAttribute("emails");
-        for(String string : list)
-        {%>
-            <p><%=string%></p>
-        <%}%>
-        <p><a href="addUser.html">Add an email to the list</a></p>
+                <p><%=string%></p>
+            <%}%>
+            <p><a href="addUser.html">Add an email to the list</a></p>
+        </div>
     </body>
 </html>

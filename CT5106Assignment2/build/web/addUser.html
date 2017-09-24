@@ -7,16 +7,19 @@ and open the template in the editor.
 <html>
     <head>
         <title>Add a User to the Email Distribution</title>
+        <link rel="stylesheet" href="assignmentCSS.css"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div><h2>Add a user to the email distribution list</h2></div>
+        <h2>Add a user to the email distribution list</h2>
         <div>
             <form action="AddUserServlet" method="post">
-                <fieldset>
+                <fieldset class="fieldSetAutoSize">
                     <label>Email</label>
+                    <br class="spaceBR">
                     <input type="email" name="email">
+                    <br class="spaceBR">
                     <input type="submit" value="Submit">
                 </fieldset>
             </form>
